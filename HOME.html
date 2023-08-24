@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">  
+    <link rel="stylesheet" href="sign.html">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+
+
+   
+    <title>Happy-journey.com</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+}
+@keyframes fadeIn {
+  100% {
+    opacity:1;
+  }
+}
+.tour {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  opacity:0;
+  animation: fadeIn 2s  0.5s forwards ease-in;
+  color:#fff;
+}
+.navbar{
+    width: 100%;
+    height: 80%;
+    background-color: #fee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #000;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+
+}
+.menu ul li a:hover{
+    border-bottom: 4px solid #000;
+    transition: 0.4s;
+}
+.signup a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 6px 25px;
+    border: 2px solid #ff0000;
+}
+.place {
+    margin-left:  0%;
+    display: flex;
+    justify-content: center;
+}
+.signup a:hover{
+    background-color: red;
+    transition: 0.6s;
+}
+.body{
+    width: 100% ;
+    height: 100%;
+    margin: 0px;
+    padding: 20px;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(https://img.freepik.com/free-photo/waterfall-clean-tourist-blue-flow-asian_1417-1350.jpg?size=626&ext=jpg&ga=GA1.2.1027675327.1661769751);
+    background-position: center;
+    background-size: cover;
+}
+.heading{
+    width: 30%;
+    text-align: center;
+    margin-left: 34.5%;
+    padding-top: 20px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.heading h1{
+    font-size: 40px;
+}
+
+.heading p {
+    text-decoration: none;
+}
+.heading a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 14px 50px;
+    background-color: #fff;
+    margin-left: 11px;    
+}
+.heading a:hover{
+letter-spacing: 3px;
+transition: 0.6s;
+}
+.tour .place a img{
+    display: flex;
+    justify-content: center;
+}
+.sale {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10%;
+    margin-right: 4%;
+    margin-left: 3%;
+    color: red; 
+    font-weight: bold;
+    font-size: small;
+    border-radius: 43px;
+    padding: 14px 20px;
+}
+.sale:hover{
+    letter-spacing: 3px;
+    transition: 0.6s;
+}
+hr {
+  width:250px;
+  height:3px;
+  background-color:#3f51b5;
+  border:0;
+  margin:50px;
+}
+pre {
+    margin:50px;
+    width:250px;
+    height:3px;
+}
+.place img
+{
+    border-radius: 100% ;
+    padding: 35px;
+    margin: -17px;
+}
+.place img:hover{
+    background-color: #fee;
+    transition: 00.6s;
+}
+.para p{
+    padding-left:20% ;
+    padding-right: 20%;
+    text-align: center;
+    color: rgb(103, 98, 98)  ;
+}
+ .para h3 {
+  text-transform:capitalize;
+  font: bold 32px Raleway;
+  margin-bottom:40px;
+  text-align:center;
+}
+.destination {
+    margin-top: 8px;
+}
+.places{
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 1600px;
+    max-height: 1300;
+    margin: auto;
+    margin-top: 9px ;
+    margin-bottom: 9px;
+    background-color: #fee;
+    
+}
+.h h2 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-transform:capitalize;
+  font: bold 32px Raleway;
+  margin-bottom:0px;
+}
+h4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.places figcaption{
+    
+    color: rgb(22, 11, 11);
+    font:  italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    margin: 3px;
+}
+.places .small{
+    width: 400px;
+    height: 300px ;
+    border-radius: 3%;
+}
+.places .large{
+    width: 600px;
+    height: 300px;
+    border-radius: 0%;
+    
+}
+iframe{
+    border-radius: 3%;
+}
+.places p{
+    margin: 20px;
+    margin-bottom: 0%;
+    padding-left:10% ;
+    padding-right: 10%;
+    text-align: center;
+   
+}
+.table {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 1%;
+    border: none;
+}
+button{
+    border: none;
+    background-color: #fee;
+    margin: 25px;
+}
+button a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 14px 30px;
+    background-color: #fff;
+    margin: 25px;}
+button a:hover{
+    letter-spacing: 3px;
+     transition: 0.6s;
+}
+
+
+.footer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer a:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+}
+   </style>
+
+</head>
+<body  >
+
+    <div class="navbar">
+        <div class="logo">
+            
+            <h1>  Happy Journey</h1>
+        
+        </div>
+   
+        <div class="menu">
+            <ul>
+                    <li><a href="" target="_blank" >FLIGHTS</a></li>
+                    <li><a href="" target="_blank" >HOTELS</a></li>
+                    <li><a href="" target="_blank" >MONUMENTS</a></li>
+                    <li><a href="" target="_blank" >BUS</a></li>
+                    <li><a href="" target="_blank" >TRAINS</a></li>
+                    
+            </ul>
+        </div>
+
+        <div class="signup">
+            <a href="file:///C:/Users/WIN%207/Desktop/HTML/web%20page/sign.html"> sign up</a>
+        </div>
+
+    </div>
+ 
+    
+
+
+   <div class="body">
+
+        
+            <div class="heading">
+                <h1>Travel With Us</h1>
+                <br>
+                <p>Live with no excuses , travel with no regret travel with us , let us find some beautiful Places for you .</p>
+                <br>
+                <br>
+                <a href="#">Learn More</a>
+                </div>
+        
+
+
+<br>
+
+
+<header>
+    <div class="tour">
+    
+        <div class="place">
+        <a href="#" target="_blank" title="15% OFF GO NOW"> <img src="https://img.freepik.com/free-vector/mumbai-landmarks-white-backgroundisolated-objects-flat-vector-illustration-business-travel-tourism-concept-with-modern-buildings-image-banner-web-site_596401-514.jpg?size=626&ext=jpg&ga=GA1.2.1540112425.1648847071" alt="" width="250px" height="250px"><center class="sale">15% OFF GO NOW</center></a>
+        <a href="#" target="_blank" title="20% OFF GO NOW"> <img src="https://img.freepik.com/free-vector/illustration-world-famous-landmarks_53876-2935.jpg?size=626&ext=jpg&ga=GA1.2.1540112425.1648847071" alt="" width="250px" height="250px"><center class="sale">18% OFF GO NOW</center></a>
+        <a href="#" target="_blank" title="25% OFF GO NOW"><img src="https://img.freepik.com/free-vector/summer-holidays-beach-background-poster-with-chair-starfish-cocktail-vector-illustration_98292-3679.jpg?size=338&ext=jpg&ga=GA1.2.1540112425.1648847071" alt="" width="250px" height="250px"><center class="sale">20% OFF GO NOW</center></a>
+        <a href="#" target="_blank" title="5% OFF GO NOW"><img src="https://img.freepik.com/free-vector/retro-promotional-poster-dubai-template_23-2148306740.jpg?size=338&ext=jpg&ga=GA1.2.1540112425.1648847071" alt="" width="250px" height="250px"><center class="sale">10% OFF GO NOW</center></a>
+        <a href="#" target="_blank" title="5% OFF GO NOW"><img src="https://img.freepik.com/free-vector/journey-your-dream-cartoon-landing-page-with-pink-magic-castle-princess-fairy-palace-with-turrets-clock-mountain-top_107791-5286.jpg?size=626&ext=jpg&ga=GA1.2.1540112425.1648847071" alt="" width="250px" height="250px"><center class="sale">5% OFF GO NOW</center></a> 
+        </div>
+</div>
+</header>
+<br>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+<div class="para">
+     <h3>Some Of Our Destinations</h3>
+        
+        <p >Love the surf and sand? History buff? Nature enthusiast? Thrill seeker interested in water sports, dolphin sightseeing, backwater kayaking, parasailing, and scuba diving? Goa has something for everyone</p>      
+</div>
+<center><hr></center>
+
+<div class="destination">
+    
+<div class="places">
+    <div class="h"><h2 >MUMBAI</h2></div> 
+    <h4>City in Maharashtra</h4>
+    <p >
+        Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924. Offshore, nearby Elephanta Island holds ancient cave temples dedicated to the Hindu god Shiva. The city's also famous as the heart of the Bollywood film industry. <br>
+        
+        <b>Area:</b> 603.4 km² <br>
+        <b>Elevation:</b> 14 m <br>
+        <table border="1" cellspacing="0" cellpadding="8" class="table" style="background-color: #fee;">
+            <tr style="background-color: white;">
+             <th>S NO. </th>
+             <th>Packages</th>
+             <th>Day/Night</th>
+             <th>Price</th>  
+            </tr>
+            <tr style="background-color: white;">
+                <td>1.</td>
+                <td>Mumbai Holiday</td>
+                <td>4 Days/3 Nights</td>
+                <td>RS- 29,999 </td>
+            </tr>
+        </table>
+        <button><a href="file:///C:/Users/WIN%207/Desktop/HTML/mumbaib.html#">Read More</a></button>
+        </p>
+    <figcaption>
+        <img src="https://t3.ftcdn.net/jpg/03/72/91/02/240_F_372910218_qOJk1kaZMKQ9qIaso0Q0NjA1wzVbWgwC.jpg" alt="" class="small">
+        <img src="https://t4.ftcdn.net/jpg/02/28/13/27/240_F_228132761_LYREEym8DfhncadoRWFEydG8YtSQPu4a.jpg" alt="" class="large"><br>
+        <img src="https://t4.ftcdn.net/jpg/01/94/30/85/240_F_194308508_HZXb24lEi6yaMy3MilayyEksYwOSCQEK.jpg" alt="" class="large">
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/O4DjIP4L-7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        
+        </figcaption>
+        
+</div>
+<br>
+
+
+
+<div class="places">
+    <div class="h"><h2 >DEHLI</h2></div>   
+    
+<h4>City in India</h4>
+<p>Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts, sweets shops and spice stalls. <br>
+    <b>Area:</b> 1,483 km² <br>
+    <b>Population:</b> 1.9 crores (2012)</p><br>
+    <table border="1" cellspacing="0" cellpadding="8" class="table" style="background-color: #fee;">
+        <tr style="background-color: white;">
+         <th>S NO. </th>
+         <th>Packages</th>
+         <th>Day/Night</th>
+         <th>Price</th>  
+        </tr>
+        <tr style="background-color: white;">
+            <td>1.</td>
+            <td>Dehli Holiday</td>
+            <td>4 Days/3 Nights</td>
+            <td>RS- 18,999 </td>
+        </tr>
+    </table>
+    <button><a href="file:///C:/Users/WIN%207/Desktop/HTML/dehli.html" target="_blank"> Read More</a></button>
+
+    <figcaption><img src="https://t4.ftcdn.net/jpg/03/84/84/37/240_F_384843795_dfYYUFsF2aKCWjPen8FaMb64zTH77vGa.jpg" alt="" class="small">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSFhZCeqLPInTQd2uojmMxxrUKpMoEN7oWQ&usqp=CAU" alt="" class="large"><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUCADuXeiPxH0KaxSLx0-kxxLhi7vu7BkcAQ&usqp=CAU" alt="" class="large">
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/t-i1aJLNkYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        
+    </figcaption>
+</div>
+<br>
+
+
+<div class="places">
+    <div class="h"><h2 >GOA</h2></div>  
+<h4>State of India</h4>
+<p>Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda.Chief minister: <br>
+<b>Area:</b> 3,702 km² <br>
+<b>Founded:</b> 30 May 1987 <br>
+<b>Population:</b> 18.2 lakhs (2012) <br>
+<b>Chief minister:</b> Pramod Sawant <br>
+</p>    
+    <table border="1" cellspacing="0" cellpadding="8" class="table" style="background-color: #fee;">
+        <tr style="background-color: white;">
+         <th>S NO. </th>
+         <th>Goa Packages</th>
+         <th>Day/Night</th>
+         <th>Price</th>  
+        </tr>
+        <tr style="background-color: white;">
+            <td>1.</td>
+            <td>Goa Holiday</td>
+            <td>4 Days/3 Nights</td>
+            <td>RS- 21,999 </td>
+        </tr>
+    </table>
+    <button><a href="file:///C:/Users/WIN%207/Desktop/HTML/goa.html" target="_blank"> Read More</a></button>
+
+    <figcaption><img src="https://t3.ftcdn.net/jpg/03/24/15/68/240_F_324156883_ZTgHR2eMAJUBXgIPk4SJR06SZgsyMzTl.jpg" alt="" class="small">
+        <img src="https://t3.ftcdn.net/jpg/04/59/66/36/240_F_459663613_qibAd3Il4Y3Vt043qR8VkC7rsoT0km3B.jpg" alt="" class="large"><br>
+        <img src="https://t4.ftcdn.net/jpg/03/13/40/17/240_F_313401752_ZKXJGMnZR4ZSwwfN73YztrVtmk4uz4ZO.jpg" alt="" class="large">
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/2tj8kpORcKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    </figcaption>
+</div>
+<br>
+
+
+<div class="places">
+    <div class="h"><h2 >DUBAI</h2></div> 
+<h4>City in the United Arab Emirates</h4>
+<p>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks. <br>
+   <br> <b>Area:</b> 35 km² <br>
+    <b>Founded:</b> 9 June 1833 <br>
+    <b>Local time:</b> Wednesday, 6:48 pm <br>
+    <b>Weather:</b> 26 °C, Wind N at 16 km/h, 70% Humidity <a href="https://weather.com/weather/today/l/25.20,55.27?par=google" target="_blank">weather.com</a> <br>
+    <b>Population:</b> 33.3 lakhs (2019) <br>
+    <b>Founder:</b> <a href="https://www.google.com/search?sxsrf=ALiCzsYEu3UcX9vSK3U5kjkXCa1iYYqvzQ:1666795729675&q=House+of+Maktoum&stick=H4sIAAAAAAAAAOPgE-LUz9U3MEwzsChS4gIxjYrKTZOTtRQzyq30k_NzclKTSzLz8_Rz8pMTQYxiq7T80ryU1KLiRawCHvmlxakK-WkKvonZJfmluTtYGXexM3EwAABGdOYzVwAAAA&sa=X&ved=2ahUKEwj0koX7kf76AhVSCbcAHXtdAjAQmxMoAXoECHYQAw&biw=1280&bih=611&dpr=1.25" target="_blank" style="text-decoration: none; color: #3f51b5;" >House of Maktoum</a> <br></p>
+    <table border="1" cellspacing="0" cellpadding="8" class="table" style="background-color: #fee;">
+        <tr style="background-color: white;">
+         <th>S NO. </th>
+         <th>Packages</th>
+         <th>Day/Night</th>
+         <th>Price</th>  
+        </tr>
+        <tr style="background-color: white;">
+            <td>1.</td>
+            <td>Luce Dubai- Parks & Resort Spacial Package</td>
+            <td>7 Days/6 Nights</td>
+            <td>RS- 69,999 </td>
+        </tr>
+    </table> 
+    <button><a href="file:///C:/Users/WIN%207/Desktop/HTML/Dubai.html" target="_blank"> Read More</a></button>
+
+    <figcaption><img src="https://t4.ftcdn.net/jpg/03/50/53/69/240_F_350536967_FmxzgtbmsaDHGA9ahHp7cNPASq8BkG4q.jpg" alt="" class="small">
+        <img src="https://t4.ftcdn.net/jpg/01/64/86/27/240_F_164862732_2alYrbNRuMyDeUeVWPZrzqFdVW2UUJeN.jpg" alt="" class="large"><br>
+        <img src="https://t4.ftcdn.net/jpg/01/13/25/79/240_F_113257999_867VvckBsZwUYNVnYk8bWeLpEtIJXrdW.jpg" alt="" class="large">
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/XuEv8-dKm08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        
+        </figcaption>
+
+</div>
+<br>
+
+
+<div class="places">
+    <div class="h"><h2 >DISNEY</h2></div>  
+   <p> Bay Lake is a city in Orange County, Florida, United States. The population was 29 at the 2020 census.[4] It is named after a lake that lies east of the Magic Kingdom. All four of the Walt Disney World Resort theme parks, and one of Walt Disney World's two water parks, are in Bay Lake, though all Disney parks in the region have mailing addresses in nearby Lake Buena Vista. <br>
+    Bay Lake is one of two Florida municipalities inside the Reedy Creek Improvement District, which also includes Walt Disney World, the other being Lake Buena Vista. The city is part of the Orlando–Kissimmee–Sanford Metropolitan Statistical Area. <br>
+<br>
+<b>Location:</b>  Disneyland Resort, 1313 Disneyland Drive Anaheim, California, U.S. <br>
+<b>Owner:</b>  Disney Parks, Experiences and Products (The Walt Disney Company) <br>
+<b>Coordinates:</b>	33.81°N 117.92°WCoordinates: 33.81°N 117.92°W <br>
+<b>Theme:</b>  Fairy tales and Disney characters <br>
+<b>Opened:</b>  July 17, 1955; 67 years ago[1] <br>
+<b>Slogan:</b>	 The happiest place on earth <br>
+<b>Operated by:</b>  Disneyland Resort <br>
+<b>Operating season:</b>  Year-round <br>
+<b>Website:</b>  Official website  <br>
+<b>Status:</b>	 Operating <br>
+
+   </p>
+    <table border="1" cellspacing="0" cellpadding="8" class="table" style="background-color: #fee;">
+        <tr style="background-color: white;">
+         <th>S NO. </th>
+         <th>Packages</th>
+         <th>Day/Night</th>
+         <th>Price</th>  
+        </tr>
+        <tr style="background-color: white;">
+            <td>1.</td>
+            <td>Mumbai Holiday</td>
+            <td>4 Days/3 Nights</td>
+            <td>RS- 29,999 </td>
+        </tr>
+    </table>
+    <button><a href="file:///C:/Users/WIN%207/Desktop/HTML/disney.HTML" target="_blank"> Read More</a></button>
+
+    <figcaption><img src="https://img.freepik.com/free-vector/amusement-park-vector-illustration_1284-9702.jpg?size=626&ext=jpg&ga=GA1.2.1540112425.1648847071" alt="" class="small">
+        <img src="https://img.freepik.com/free-vector/pink-magic-castle_107791-3704.jpg?size=626&ext=jpg&ga=GA1.2.1540112425.1648847071" alt="" class="large"><br>
+        <img src="https://img.freepik.com/free-photo/full-moon-halloween-night_1048-3393.jpg?size=626&ext=jpg&ga=GA1.2.1540112425.1648847071" alt="" class="large">
+        <iframe width="400px" height="300px" src="https://www.youtube.com/embed/l7oCuKlvTks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    </figcaption>
+</div>
+</div>
+   <div class="footer">
+    <a href="#">Copyright</a>
+    <a href="#">Term & Conditions</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Cookies</a>
+    <a href="#">Complaints</a>
+    </div>
+</body>
+</html>
